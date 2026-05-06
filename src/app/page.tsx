@@ -1,5 +1,4 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import FixedHero from "@/components/FixedHero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
@@ -8,16 +7,16 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
+    <div className="lg:flex min-h-screen">
+      <FixedHero />
+
+      <main className="lg:ml-[42%] flex-1">
         <About />
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
       </main>
-      <Footer />
-    </>
+    </div>
   );
 }
