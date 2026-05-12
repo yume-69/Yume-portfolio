@@ -2,11 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1a2e;
+  /* メインテキスト（黒系 → 茶褐色） */
+  --foreground: #2d2118;
   --accent: #4ecdc4;
   --accent-light: #7eddd6;
   --accent-subtle: #e8faf8;
-  --muted: #94a3b8;
+  /* 補助テキストも茶系グレーで統一 */
+  --muted: #7d6e62;
   --card: #ffffff;
   --border: #e2e8f0;
   --hero-bg: #f8fffe;

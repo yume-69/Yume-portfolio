@@ -7,7 +7,7 @@ export default function Footer() {
         </p>
         <div className="flex gap-5 lg:hidden">
           <a
-            href="https://github.com"
+            href="https://github.com/yume-69"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-muted hover:text-accent transition-colors"
@@ -15,7 +15,7 @@ export default function Footer() {
             GitHub
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/dream_ota_69"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-muted hover:text-accent transition-colors"

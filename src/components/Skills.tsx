@@ -3,13 +3,11 @@ const skills = [
   { name: "Next.js", icon: "▲" },
   { name: "TypeScript", icon: "TS" },
   { name: "Tailwind", icon: "🎨" },
-  { name: "Node.js", icon: "⬢" },
   { name: "Python", icon: "🐍" },
-  { name: "PostgreSQL", icon: "🐘" },
   { name: "Git", icon: "⎇" },
   { name: "Docker", icon: "🐳" },
-  { name: "Figma", icon: "🎯" },
-  { name: "Vercel", icon: "▲" },
+  { name: "MySQL", icon: "🐬" },
+  { name: "AWS", icon: "🌐" },
 ];
 
 function HexCell({
@@ -19,14 +17,17 @@ function HexCell({
 }) {
   return (
     <div className="group flex flex-col items-center">
-      <div className="clip-hexagon w-24 h-28 bg-accent-subtle flex items-center justify-center transition-colors group-hover:bg-accent">
-        <span className="text-2xl group-hover:scale-110 transition-transform">
+      <div
+        className="clip-hexagon flex h-[8.75rem] w-[7.25rem] flex-col items-center justify-center gap-1 bg-accent-subtle px-2 py-3 text-center transition-colors group-hover:bg-accent sm:h-[9.25rem] sm:w-[7.75rem]"
+        aria-label={skill.name}
+      >
+        <span className="shrink-0 text-xl leading-none transition-transform group-hover:scale-110 sm:text-2xl">
           {skill.icon}
         </span>
+        <span className="max-w-[5.5rem] text-[9px] font-medium leading-tight tracking-wide text-muted transition-colors group-hover:text-white sm:max-w-[6rem] sm:text-[10px]">
+          {skill.name}
+        </span>
       </div>
-      <span className="mt-2 text-xs font-medium tracking-wide text-muted group-hover:text-foreground transition-colors">
-        {skill.name}
-      </span>
     </div>
   );
 }
@@ -52,7 +53,7 @@ export default function Skills() {
           ))}
         </div>
         {/* Honeycomb row 2 — offset */}
-        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 -mt-4 ml-14">
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 -mt-4 ml-9 sm:ml-0.5">
           {bottomRow.map((skill) => (
             <HexCell key={skill.name} skill={skill} />
           ))}

@@ -4,8 +4,9 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "#about", label: "About" },
+  { href: "#career", label: "Career" },
   { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
+  { href: "#articles", label: "Articles" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -17,7 +18,7 @@ export default function FixedHero() {
       {/* Mobile header */}
       <header className="lg:hidden fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/90 border-b border-border">
         <div className="flex items-center justify-between px-6 py-4">
-          <span className="text-lg font-bold tracking-tight">Yume</span>
+          <span className="text-lg font-bold tracking-tight">Yume Ota</span>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="flex flex-col gap-1.5 p-2"
@@ -63,10 +64,7 @@ export default function FixedHero() {
             Yume
           </h1>
           <p className="mt-4 text-xl text-muted leading-relaxed max-w-sm">
-            Web Developer &amp; Designer
-          </p>
-          <p className="mt-3 text-base text-muted/70 leading-relaxed max-w-sm">
-            美しく、使いやすいWebサイトをつくります。
+            Web Engineer
           </p>
         </div>
 
@@ -102,6 +100,14 @@ export default function FixedHero() {
             className="text-sm text-muted hover:text-accent transition-colors"
           >
             X / Twitter
+          </a>
+          <a
+            href="https://qiita.com/gonzaemon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted hover:text-accent transition-colors"
+          >
+            Qiita
           </a>
         </div>
       </aside>
